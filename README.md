@@ -1,1 +1,2 @@
-"# Classroom Project" 
+<<<<<<< HEAD
+# Classroom Project
