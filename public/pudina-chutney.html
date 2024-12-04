@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pudina Chutney</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: #45a049;
+        }
+        
+        /* Main Content Styles */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+        
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        #recipeDetails {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        
+        #recipeDetails img {
+            width: 40%; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px;
+            margin-left: 20%;
+        }
+        
+        #recipeDetails h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        #recipeDetails ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        
+        #recipeDetails li {
+            margin-bottom: 8px;
+        }
+        
+        #recipeDetails ol {
+            padding-left: 20px;
+        }
+        
+        /* Additional Sections Styles */
+        .info-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .info-section h2 {
+            color: black;
+            margin-bottom: 15px;
+        }
+
+        .info-section p {
+            margin-bottom: 10px;
+        }
+        
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color:#4CAF50;
+            color: white;
+            width: 100%;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="breakfast.html">Breakfast</a>
+            <a href="maincourse.html">Main Courses</a>
+            <a href="desserts.html">Desserts</a>
+            <a href="snacks.html">Snacks</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Pudina Chutney</h1>
+        <div id="recipeDetails">
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>1 cup fresh mint leaves</li>
+                    <li>1/2 cup fresh coriander leaves</li>
+                    <li>2 green chilies</li>
+                    <li>1-inch piece of ginger</li>
+                    <li>1 tablespoon lemon juice</li>
+                    <li>Salt to taste</li>
+                    <li>Water as needed</li>
+                </ul>
+            </div>
+            <img src="webimg/pudina-chutney.png" alt="Pudina Chutney">
+        </div>
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>In a blender, combine mint leaves, coriander leaves, green chilies, ginger, lemon juice, and salt.</li>
+                <li>Add a small amount of water and blend until smooth. Adjust the consistency by adding more water if needed.</li>
+                <li>Taste and adjust seasoning if necessary.</li>
+                <li>Transfer the chutney to a serving bowl. Serve with snacks like samosas or pakoras.</li>
+            </ol>
+        </div>
+        <div class="info-section">
+            <h2>Nutritional Information</h2>
+            <p><strong>Serving Size:</strong> 2 tablespoons</p>
+            <p><strong>Calories:</strong> 25 kcal</p>
+            <p><strong>Protein:</strong> 1 g</p>
+            <p><strong>Carbohydrates:</strong> 5 g</p>
+            <p><strong>Fat:</strong> 0 g</p>
+            <p><strong>Sodium:</strong> 50 mg</p>
+        </div>
+        <div class="info-section">
+            <h2>Cooking Tips and Tricks</h2>
+            <p>1. Use fresh mint and coriander for the best flavor. Avoid using dried herbs as they lack the vibrant taste of fresh herbs.</p>
+            <p>2. Adjust the number of green chilies based on your preferred spice level. For a milder chutney, use fewer chilies or remove the seeds.</p>
+            <p>3. Adding a small piece of sugar or a bit of honey can balance the flavors if the chutney is too tangy or spicy.</p>
+            <p>4. If the chutney is too thick, add water gradually until you reach your desired consistency. It should be smooth and easily spreadable.</p>
+            <p>5. For an extra kick, you can add a pinch of roasted cumin powder or chaat masala to the chutney before serving.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Earthly Eats. All rights reserved.</p>
+    </footer>
+</body>
+</html>

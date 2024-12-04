@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palak Pakora</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: #45a049;
+        }
+        
+        /* Main Content Styles */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+        
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        #recipeDetails {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        
+        #recipeDetails .ingredients {
+            flex: 1;
+        }
+        
+        #recipeDetails .ingredients h2,
+        #recipeDetails .instructions h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        #recipeDetails .ingredients ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        
+        #recipeDetails .ingredients li,
+        #recipeDetails .instructions li {
+            margin-bottom: 15px;
+        }
+        
+        #recipeDetails .instructions {
+            flex: 2;
+        }
+        
+        #recipeDetails img {
+            width: 50%; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px;
+        }
+        
+        /* Additional Sections Styles */
+        .info-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .info-section h2 {
+            color: black;
+            margin-bottom: 15px;
+        }
+
+        .info-section p {
+            margin-bottom: 10px;
+        }
+        
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color:#4CAF50;
+            color: white;
+            width: 100%;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="breakfast.html">Breakfast</a>
+            <a href="maincourse.html">Main Courses</a>
+            <a href="desserts.html">Desserts</a>
+            <a href="snacks.html">Snacks</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Palak Pakora</h1>
+        <div id="recipeDetails">
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>1 bunch spinach leaves</li>
+                    <li>1 cup gram flour (besan)</li>
+                    <li>1/4 cup rice flour</li>
+                    <li>1 teaspoon carom seeds (ajwain)</li>
+                    <li>1/2 teaspoon turmeric powder</li>
+                    <li>1/2 teaspoon red chili powder</li>
+                    <li>Salt to taste</li>
+                    <li>Water as needed</li>
+                    <li>Oil for deep frying</li>
+                </ul>
+            </div>
+            <img src="webimg/palak-pakoda.png" alt="Palak Pakora">
+        </div>
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Wash and pat dry the spinach leaves. Set aside.</li>
+                <li>In a mixing bowl, combine gram flour, rice flour, carom seeds, turmeric powder, red chili powder, and salt.</li>
+                <li>Add water gradually to form a smooth, thick batter.</li>
+                <li>Heat oil in a deep frying pan over medium heat.</li>
+                <li>Dip each spinach leaf into the batter, ensuring it is well coated.</li>
+                <li>Carefully drop the coated leaves into the hot oil and fry until golden and crisp.</li>
+                <li>Remove the pakoras from the oil and drain on paper towels.</li>
+                <li>Serve hot with chutney or ketchup.</li>
+            </ol>
+        </div>
+        <div class="info-section">
+            <h2>Nutritional Information</h2>
+            <p><strong>Serving Size:</strong> 1 pakora</p>
+            <p><strong>Calories:</strong> 80 kcal</p>
+            <p><strong>Protein:</strong> 2 g</p>
+            <p><strong>Carbohydrates:</strong> 9 g</p>
+            <p><strong>Fat:</strong> 4 g</p>
+            <p><strong>Sodium:</strong> 150 mg</p>
+        </div>
+        <div class="info-section">
+            <h2>Cooking Tips and Tricks</h2>
+            <p>1. Ensure the oil is hot enough before frying to achieve crispy pakoras. You can test this by dropping a small bit of batter into the oil; it should sizzle and rise to the surface.</p>
+            <p>2. For extra crispiness, add a pinch of baking soda to the batter.</p>
+            <p>3. Don’t overcrowd the pan while frying; this can lower the oil temperature and result in greasy pakoras.</p>
+            <p>4. Use fresh spinach leaves for the best flavor and texture.</p>
+            <p>5. If the batter is too thick, add a little more water. It should coat the leaves well but not be runny.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Earthly Eats. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhaniya Chutney</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: #45a049;
+        }
+        
+        /* Main Content Styles */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+        
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        #recipeDetails {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        
+        #recipeDetails img {
+            width: 50%; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px;
+            margin-left: 10%;
+        }
+        
+        #recipeDetails h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        #recipeDetails ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        
+        #recipeDetails li {
+            margin-bottom: 8px;
+        }
+        
+        #recipeDetails ol {
+            padding-left: 20px;
+        }
+        
+        /* Additional Sections Styles */
+        .info-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .info-section h2 {
+            color: black;
+            margin-bottom: 15px;
+        }
+
+        .info-section p {
+            margin-bottom: 10px;
+        }
+        
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color:#4CAF50;
+            color: white;
+            width: 100%;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="breakfast.html">Breakfast</a>
+            <a href="maincourse.html">Main Courses</a>
+            <a href="desserts.html">Desserts</a>
+            <a href="snacks.html">Snacks</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Dhaniya Chutney</h1>
+        <div id="recipeDetails">
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>1 cup fresh coriander leaves</li>
+                    <li>2 green chilies</li>
+                    <li>1-inch piece of ginger</li>
+                    <li>1 tablespoon lemon juice</li>
+                    <li>Salt to taste</li>
+                    <li>Water as needed</li>
+                </ul>
+            </div>
+            <img src="webimg/dhaniya-chutney.jpeg" alt="Dhaniya Chutney">
+        </div>
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>In a blender, combine coriander leaves, green chilies, ginger, lemon juice, and salt.</li>
+                <li>Add a small amount of water and blend until smooth. Adjust the consistency by adding more water if needed.</li>
+                <li>Taste and adjust seasoning if necessary.</li>
+                <li>Transfer the chutney to a serving bowl. Serve with snacks like fritters or parathas.</li>
+            </ol>
+        </div>
+        <div class="info-section">
+            <h2>Nutritional Information</h2>
+            <p><strong>Serving Size:</strong> 2 tablespoons</p>
+            <p><strong>Calories:</strong> 30 kcal</p>
+            <p><strong>Protein:</strong> 1 g</p>
+            <p><strong>Carbohydrates:</strong> 6 g</p>
+            <p><strong>Fat:</strong> 0.5 g</p>
+            <p><strong>Sodium:</strong> 150 mg</p>
+        </div>
+        <div class="info-section">
+            <h2>Cooking Tips and Tricks</h2>
+            <p>1. For a tangier flavor, you can add an extra tablespoon of lemon juice.</p>
+            <p>2. Adjust the spiciness by varying the number of green chilies used.</p>
+            <p>3. If you prefer a smoother chutney, blend the ingredients for a longer time or use a food processor.</p>
+            <p>4. Store the chutney in an airtight container in the refrigerator for up to a week.</p>
+            <p>5. For a variation, add a small handful of mint leaves for a refreshing twist.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Earthly Eats. All rights reserved.</p>
+    </footer>
+</body>
+</html>

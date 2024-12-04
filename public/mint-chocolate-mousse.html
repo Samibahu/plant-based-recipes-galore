@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mint Chocolate Mousse</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: #45a049;
+        }
+        
+        /* Main Content Styles */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+        
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        #recipeDetails {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        
+        #recipeDetails img {
+            max-width: 60%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        #recipeDetails div {
+            flex: 1;
+        }
+        
+        #recipeDetails h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        #recipeDetails ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        
+        #recipeDetails li {
+            margin-bottom: 8px;
+        }
+        
+        #recipeDetails ol {
+            padding-left: 20px;
+        }
+        
+        #recipeDetails ol li {
+            margin-bottom: 15px;
+        }
+        
+        /* Additional Sections Styles */
+        .info-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .info-section h2 {
+            color: black;
+            margin-bottom: 15px;
+        }
+        
+        .info-section p {
+            margin-bottom: 10px;
+        }
+        
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            width: 100%;
+            margin-top: auto;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            #recipeDetails {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #recipeDetails img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="breakfast.html">Breakfast</a>
+            <a href="maincourse.html">Main Courses</a>
+            <a href="desserts.html">Desserts</a>
+            <a href="snacks.html">Snacks</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Mint Chocolate Mousse</h1>
+        <div id="recipeDetails">
+            <div>
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>1 cup heavy cream</li>
+                    <li>1/2 cup semi-sweet chocolate chips</li>
+                    <li>1/4 cup sugar</li>
+                    <li>1/2 teaspoon peppermint extract</li>
+                    <li>Pinch of salt</li>
+                </ul>
+                <h2>Instructions</h2>
+                <ol>
+                    <li>In a small saucepan, heat the cream over medium heat until it begins to simmer.</li>
+                    <li>Remove from heat and add the chocolate chips, stirring until smooth and melted.</li>
+                    <li>Stir in the peppermint extract and a pinch of salt.</li>
+                    <li>Let the mixture cool to room temperature, then refrigerate until chilled.</li>
+                    <li>Once chilled, whip the mixture with an electric mixer until light and fluffy.</li>
+                    <li>Transfer to serving dishes and refrigerate for at least 1 hour before serving.</li>
+                </ol>
+            </div>
+            <img src="webimg/mint-chocolate-mousse.png" alt="Mint Chocolate Mousse">
+        </div>
+        <div class="info-section">
+            <h2>Nutritional Information</h2>
+            <p><strong>Serving Size:</strong> 1/2 cup</p>
+            <p><strong>Calories:</strong> 200 kcal</p>
+            <p><strong>Protein:</strong> 2 g</p>
+            <p><strong>Carbohydrates:</strong> 20 g</p>
+            <p><strong>Fat:</strong> 14 g</p>
+            <p><strong>Sodium:</strong> 40 mg</p>
+        </div>
+        <div class="info-section">
+            <h2>Cooking Tips and Tricks</h2>
+            <p>1. For a richer chocolate flavor, use high-quality semi-sweet chocolate chips or chopped chocolate.</p>
+            <p>2. Make sure the cream is fully chilled before whipping for the best texture.</p>
+            <p>3. If you prefer a stronger mint flavor, increase the peppermint extract slightly.</p>
+            <p>4. To avoid over-whipping the cream, watch closely as it begins to thicken and stop as soon as soft peaks form.</p>
+            <p>5. Garnish with shaved chocolate or fresh mint leaves for a decorative touch before serving.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Earthly Eats. All rights reserved.</p>
+    </footer>
+</body>
+</html>

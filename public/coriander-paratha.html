@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coriander Parantha</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: #45a049;
+        }
+        
+        /* Main Content Styles */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+        
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        #recipeDetails {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        
+        #recipeDetails img {
+            width: 50%; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px;
+        }
+        
+        #recipeDetails h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        #recipeDetails ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        
+        #recipeDetails li {
+            margin-bottom: 8px;
+        }
+        
+        #recipeDetails ol {
+            padding-left: 20px;
+        }
+        
+        /* Additional Sections Styles */
+        .info-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .info-section h2 {
+            color: black;
+            margin-bottom: 15px;
+        }
+
+        .info-section p {
+            margin-bottom: 10px;
+        }
+        
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color:#4CAF50;
+            color: white;
+            width: 100%;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="breakfast.html">Breakfast</a>
+            <a href="maincourse.html">Main Courses</a>
+            <a href="desserts.html">Desserts</a>
+            <a href="snacks.html">Snacks</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Coriander Parantha</h1>
+        <div id="recipeDetails">
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>2 cups whole wheat flour</li>
+                    <li>1/2 cup fresh coriander leaves, finely chopped</li>
+                    <li>1 teaspoon cumin seeds</li>
+                    <li>1/2 teaspoon salt</li>
+                    <li>1/4 teaspoon turmeric powder</li>
+                    <li>Water as needed</li>
+                    <li>Ghee or oil for cooking</li>
+                </ul>
+            </div>
+            <img src="webimg/coriander-paratha.png" alt="Coriander Parantha">
+        </div>
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>In a mixing bowl, combine the wheat flour, chopped coriander leaves, cumin seeds, salt, and turmeric powder.</li>
+                <li>Add water gradually and knead into a soft dough.</li>
+                <li>Divide the dough into equal portions and roll each into a ball.</li>
+                <li>Roll each ball into a flat circle, dusting with flour as needed.</li>
+                <li>Heat a griddle or tawa over medium heat. Cook each parantha, applying ghee or oil on both sides until golden brown.</li>
+                <li>Serve hot with curd or pickle.</li>
+            </ol>
+        </div>
+        <div class="info-section">
+            <h2>Nutritional Information</h2>
+            <p><strong>Serving Size:</strong> 1 parantha</p>
+            <p><strong>Calories:</strong> 180 kcal</p>
+            <p><strong>Protein:</strong> 4 g</p>
+            <p><strong>Carbohydrates:</strong> 30 g</p>
+            <p><strong>Fat:</strong> 4 g</p>
+            <p><strong>Sodium:</strong> 250 mg</p>
+        </div>
+        <div class="info-section">
+            <h2>Cooking Tips and Tricks</h2>
+            <p>1. Ensure the dough is soft and pliable; if it's too stiff, the paranthas may turn out hard.</p>
+            <p>2. You can add a pinch of ajwain (carom seeds) to the dough for extra flavor.</p>
+            <p>3. For a crispier texture, roll the dough thinner.</p>
+            <p>4. Use a rolling pin and work surface dusted with flour to prevent sticking.</p>
+            <p>5. If the parantha starts to puff up while cooking, gently press it down with a spatula for even cooking.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Earthly Eats. All rights reserved.</p>
+    </footer>
+</body>
+</html>

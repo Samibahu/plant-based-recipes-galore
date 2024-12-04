@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanakopita Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: #45a049;
+        }
+        
+        /* Main Content Styles */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+        
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        #recipeDetails {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        
+        #recipeDetails img {
+            max-width: 70%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        #recipeDetails h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        #recipeDetails ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        
+        #recipeDetails li {
+            margin-bottom: 8px;
+        }
+        
+        #recipeDetails ol {
+            padding-left: 20px;
+        }
+        
+        #recipeDetails li {
+            margin-bottom: 15px;
+        }
+        
+        /* Nutritional Info and Cooking Tips Styles */
+        .info-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .info-section h2 {
+            color: black;
+            margin-bottom: 15px;
+        }
+        
+        .info-section p {
+            margin-bottom: 10px;
+        }
+        
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            width: 100%;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="breakfast.html">Breakfast</a>
+            <a href="maincourse.html">Main Courses</a>
+            <a href="desserts.html">Desserts</a>
+            <a href="snacks.html">Snacks</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Spanakopita</h1>
+        <div id="recipeDetails">
+            <div id="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>2 tablespoons olive oil</li>
+                    <li>1 large onion, chopped</li>
+                    <li>4 cups fresh spinach, chopped</li>
+                    <li>1/2 cup fresh dill, chopped</li>
+                    <li>1/2 cup fresh parsley, chopped</li>
+                    <li>8 ounces feta cheese, crumbled</li>
+                    <li>2 large eggs, beaten</li>
+                    <li>1 package phyllo dough (16 ounces), thawed</li>
+                    <li>1/4 cup melted butter or olive oil for brushing</li>
+                    <li>Salt and pepper to taste</li>
+                </ul>
+            </div>
+            <img src="webimg/spanakopita.png" alt="Spanakopita">
+        </div>
+        <h2>Cooking Process</h2>
+        <ol>
+            <li>Preheat the oven to 375°F (190°C).</li>
+            <li>Heat olive oil in a pan over medium heat. Add onions and sauté until translucent.</li>
+            <li>Add spinach and cook until wilted. Remove from heat and let cool.</li>
+            <li>Stir in dill, parsley, feta cheese, and beaten eggs. Season with salt and pepper to taste.</li>
+            <li>Brush a baking dish with melted butter or olive oil. Lay one sheet of phyllo dough in the dish, brushing it lightly with butter or oil. Repeat with several more sheets, layering them on top of each other.</li>
+            <li>Spread the spinach and feta mixture evenly over the layered phyllo dough.</li>
+            <li>Top with additional phyllo sheets, brushing each with butter or oil. Trim the edges and tuck them in around the filling.</li>
+            <li>Bake in the preheated oven for 30-40 minutes, or until the phyllo is golden brown and crisp.</li>
+            <li>Let cool slightly before slicing and serving.</li>
+        </ol>
+        <div class="info-section">
+            <h2>Nutritional Information</h2>
+            <p><strong>Serving Size:</strong> 1 slice (1/8 of recipe)</p>
+            <p><strong>Calories:</strong> 300 kcal</p>
+            <p><strong>Protein:</strong> 10 g</p>
+            <p><strong>Carbohydrates:</strong> 30 g</p>
+            <p><strong>Fat:</strong> 18 g</p>
+            <p><strong>Sodium:</strong> 600 mg</p>
+        </div>
+        <div class="info-section">
+            <h2>Cooking Tips and Tricks</h2>
+            <p>1. Make sure the spinach is well-drained before mixing it with the other ingredients to avoid a soggy filling.</p>
+            <p>2. If you have trouble working with phyllo dough, keep it covered with a damp cloth while assembling to prevent it from drying out.</p>
+            <p>3. For a crispier texture, use melted butter instead of olive oil for brushing the phyllo dough layers.</p>
+            <p>4. Allow the Spanakopita to cool for a few minutes before slicing; this will help the layers set and make it easier to cut clean slices.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Earthly Eats. All rights reserved.</p>
+    </footer>
+</body>
+</html>

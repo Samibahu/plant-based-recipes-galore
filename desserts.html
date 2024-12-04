@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desserts Recipes - Earthly Eats</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            overflow: hidden; /* Ensure the image is clipped to the card */
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px; /* Set a fixed height */
+            object-fit: cover; /* Ensures the image covers the entire area without distortion */
+        }
+
+        .card h3 {
+            margin: 15px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .card p {
+            margin: 0 15px 20px 15px;
+            font-size: 16px;
+            color: #777;
+        }
+
+        .card:hover {
+            transform: translateY(-5px); /* Lift the card slightly on hover */
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Check session status from the server
+            fetch('/auth/check-session')
+                .then(response => response.json())
+                .then(data => {
+                    if (!data.loggedIn) {
+                        alert('Please log in to view this page');
+                        window.location.href = '/'; // Redirect to home page
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred while checking session status.');
+                    window.location.href = '/'; // Redirect to home page in case of error
+                });
+        });
+    </script>
+    <header>
+        <h1>Desserts Recipes</h1>
+    </header>
+
+    <div class="container">
+        <div class="card-grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <a href="baklava-cookies.html">
+
+                <img src="webimg/Baklava Cookies.jpg" alt="Baklava Cookies">
+                <h3>Baklava Cookies</h3>
+                <p>Sweet and nutty cookies inspired by classic baklava, with layers of flaky dough and a rich, spiced filling.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <a href="carrot-cake-bars.html">
+
+                <img src="webimg/Carrot Cake Bars.jpg" alt="Carrot Cake Bars">
+                <h3>Carrot Cake Bars</h3>
+                <p>Moist and flavorful carrot cake bars with a hint of spice, topped with a creamy frosting.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <a href="carrot-halwa-trifle.html">
+
+                <img src="webimg/Carrot Halwa Trifle.jpg" alt="Carrot Halwa Trifle">
+                <h3>Carrot Halwa Trifle</h3>
+                <p>A delightful fusion of traditional carrot halwa layered with creamy yogurt and nuts.</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="card">
+                <a href="chai-spiced-dessert.html">
+
+                <img src="webimg/Chai-Spiced Cookies.jpg" alt="Chai-Spiced Dessert">
+                <h3>Chai-Spiced Dessert</h3>
+                <p>A comforting dessert infused with the warm and aromatic spices of chai tea.</p>
+            </div>
+            <!-- Card 5 -->
+            <div class="card">
+                <a href="lemon-pudding.html">
+
+                <img src="webimg/Lemon Pudding.jpg" alt="Lemon Pudding">
+                <h3>Lemon Pudding</h3>
+                <p>Light and tangy lemon pudding with a smooth, velvety texture, perfect for a refreshing treat.</p>
+            </div>
+            <!-- Card 6 -->
+            <div class="card">
+                <a href="vegan-brownie.html">
+
+                <img src="webimg/vegan Browine.jpg" alt="Vegan Brownie">
+                <h3>Vegan Brownie</h3>
+                <p>Rich and fudgy brownies made without eggs or dairy, packed with chocolatey goodness.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Earthly Eats. All rights reserved.</p>
+    </footer>
+</body>
+</html>

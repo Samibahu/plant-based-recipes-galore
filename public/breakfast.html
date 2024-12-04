@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        main {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px; /* Added margin below the form */
+        }
+
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        select {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form id="recipeForm" action="/recipes/add" method="POST">
+            <label for="userName">Name:</label>
+            <input type="text" id="userName" name="userName" required>
+    
+            <label for="plantDropdown">Select a plant:</label>
+            <select id="plantDropdown" name="plantDropdown" required>
+                <option value="" disabled selected>Select a plant</option>
+                <option value="fenugreek">Fenugreek</option>
+                <option value="curryLeaves">Curry Leaves</option>
+                <option value="mint">Mint</option>
+            </select>
+    
+            <label for="dishDropdown">Select a dish:</label>
+            <select id="dishDropdown" name="dishDropdown" required>
+                <option value="" disabled selected>Select a dish</option>
+            </select>
+    
+            <button id="submitButton" type="submit">Submit</button>
+        </form>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('/auth/check-session')
+                .then(response => response.json())
+                .then(data => {
+                    if (!data.loggedIn) {
+                        alert('Please log in to view this page');
+                        window.location.href = '/'; // Redirect to home page
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred while checking session status.');
+                    window.location.href = '/'; // Redirect to home page in case of error
+                });
+        });
+    
+        const plantDropdown = document.getElementById('plantDropdown');
+        const dishDropdown = document.getElementById('dishDropdown');
+    
+        const dishes = {
+            fenugreek: [
+                { name: 'Methi Thepla', file: 'methi-thepla.html' },
+                { name: 'Methi Paratha', file: 'methi-paratha.html' }
+            ],
+            curryLeaves: [
+                { name: 'Curry Leaves Upma', file: 'curry-leaves-upma.html' },
+                { name: 'Curry Leaves Idli', file: 'curry-leaves-idli.html' }
+            ],
+            mint: [
+                { name: 'Pudina Paratha', file: 'pudina-paratha.html' },
+                { name: 'Mint Rice', file: 'mint-rice.html' }
+            ]
+        };
+    
+        plantDropdown.addEventListener('change', function() {
+            const selectedPlant = plantDropdown.value;
+            const selectedDishes = dishes[selectedPlant] || [];
+            dishDropdown.innerHTML = '<option value="" disabled selected>Select a dish</option>';
+    
+            selectedDishes.forEach(dish => {
+                const option = document.createElement('option');
+                option.value = dish.file; // Use the file name as value
+                option.textContent = dish.name;
+                dishDropdown.appendChild(option);
+            });
+        });
+    
+        // Handle form submission using fetch to send data to the server
+        document.getElementById('recipeForm').addEventListener('submit', async function (event) {
+            event.preventDefault(); // Prevent default form submission
+            
+            const userName = document.getElementById('userName').value;
+            const plantDropdown = document.getElementById('plantDropdown').value;
+            const dishDropdown = document.getElementById('dishDropdown').value;
+    
+            // Ensure fields are filled
+            if (!userName || !plantDropdown || !dishDropdown) {
+                alert('Please fill out all fields.');
+                return;
+            }
+    
+            try {
+                // Submit form data using fetch
+                const response = await fetch('/recipes/add', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        userName: userName,
+                        plantDropdown: plantDropdown,
+                        dishDropdown: dishDropdown
+                    })
+                });
+    
+                const result = await response.json();
+    
+                if (result.success) {
+                    // Redirect to the selected dish page after successful form submission
+                    window.location.href = dishDropdown;
+                } else {
+                    alert('Error submitting recipe: ' + result.error);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred while submitting the form.');
+            }
+        });
+    </script>
+    
+</body>
+</html>

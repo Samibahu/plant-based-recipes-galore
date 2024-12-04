@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methi Thepla Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #45a049;
+        }
+
+        /* Main Content Styles */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #recipeDetails {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        #recipeDetails img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #recipeDetails h2 {
+            color: #333;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        #ingredients {
+            flex: 2;
+        }
+
+        #recipeDetails ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        #recipeDetails li {
+            margin-bottom: 8px;
+        }
+
+        #recipeDetails ol {
+            padding-left: 20px;
+            width: 100%;
+        }
+
+        #recipeDetails li {
+            margin-bottom: 15px;
+        }
+
+        /* Nutritional Information */
+        #nutrition {
+            margin-top: 30px;
+        }
+
+        #nutrition h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        #nutrition ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        #nutrition li {
+            margin-bottom: 8px;
+        }
+
+        /* Cooking Tips and Tricks */
+        #tips-tricks {
+            margin-top: 30px;
+        }
+
+        #tips-tricks h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        #tips-tricks ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        #tips-tricks li {
+            margin-bottom: 8px;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            width: 100%;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="breakfast.html">Breakfast</a>
+            <a href="maincourse.html">Main Courses</a>
+            <a href="desserts.html">Desserts</a>
+            <a href="snacks.html">Snacks</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Methi Thepla</h1>
+        <div id="recipeDetails">
+            <div id="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>1 cup whole wheat flour</li>
+                    <li>1/2 cup fresh fenugreek leaves (methi), finely chopped</li>
+                    <li>1/4 cup yogurt</li>
+                    <li>1 tablespoon oil</li>
+                    <li>1 teaspoon turmeric powder</li>
+                    <li>1 teaspoon red chili powder</li>
+                    <li>1 teaspoon cumin seeds</li>
+                    <li>1/2 teaspoon carom seeds (ajwain)</li>
+                    <li>Salt to taste</li>
+                    <li>Water, as needed for kneading</li>
+                    <li>Oil or ghee for cooking</li>
+                </ul>
+            </div>
+            <img src="webimg/methi-thepla.png" alt="Methi Thepla">
+        </div>
+        <h2>Cooking Process</h2>
+        <ol>
+            <li>In a large bowl, combine whole wheat flour, chopped fenugreek leaves, yogurt, oil, turmeric powder, red chili powder, cumin seeds, carom seeds, and salt.</li>
+            <li>Mix the ingredients well and add water little by little to knead into a soft dough. Cover the dough and let it rest for 15-20 minutes.</li>
+            <li>Divide the dough into small balls. Roll each ball into a thin circle using a rolling pin, dusting with flour as needed to prevent sticking.</li>
+            <li>Heat a tawa or skillet over medium heat. Place the rolled thepla on the hot tawa and cook until bubbles appear. Flip and apply oil or ghee on the cooked side.</li>
+            <li>Cook the other side until golden brown spots appear. Flip again if needed to ensure even cooking on both sides.</li>
+            <li>Repeat the process with the remaining dough balls. Serve the methi thepla hot with yogurt, pickle, or chutney.</li>
+        </ol>
+
+        <!-- Nutritional Information Section -->
+        <section id="nutrition">
+            <h2>Nutritional Information (per serving)</h2>
+            <ul>
+                <li>Calories: 150</li>
+                <li>Carbohydrates: 24g</li>
+                <li>Protein: 5g</li>
+                <li>Fat: 4g</li>
+                <li>Fiber: 3g</li>
+                <li>Sodium: 220mg</li>
+            </ul>
+        </section>
+
+        <!-- Cooking Tips and Tricks Section -->
+        <section id="tips-tricks">
+            <h2>Cooking Tips and Tricks</h2>
+            <ul>
+                <li>To make the theplas softer, add a little extra yogurt while kneading the dough.</li>
+                <li>If the fenugreek leaves are bitter, soak them in salted water for 10-15 minutes and drain before using.</li>
+                <li>Theplas freeze well! You can store them in an airtight container in the freezer for up to a month. Just heat them on a pan before serving.</li>
+                <li>Make sure the tawa is hot enough before placing the thepla on it to ensure even cooking and avoid it turning hard.</li>
+                <li>If you want a richer flavor, use ghee instead of oil for cooking the theplas.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Earthly Eats. All rights reserved.</p>
+    </footer>
+</body>
+</html>

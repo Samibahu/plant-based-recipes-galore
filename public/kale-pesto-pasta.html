@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kale Pesto Pasta Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: #45a049;
+        }
+        
+        /* Main Content Styles */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+        
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        #recipeDetails {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        
+        #recipeDetails img {
+            max-width: 70%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        #recipeDetails h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        #recipeDetails ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        
+        #recipeDetails li {
+            margin-bottom: 8px;
+        }
+        
+        #recipeDetails ol {
+            padding-left: 20px;
+        }
+        
+        #recipeDetails li {
+            margin-bottom: 15px;
+        }
+        
+        /* Nutritional Info and Cooking Tips Styles */
+        .info-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .info-section h2 {
+            color: black;
+            margin-bottom: 15px;
+        }
+        
+        .info-section p {
+            margin-bottom: 10px;
+        }
+        
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            width: 100%;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="breakfast.html">Breakfast</a>
+            <a href="maincourse.html">Main Courses</a>
+            <a href="desserts.html">Desserts</a>
+            <a href="snacks.html">Snacks</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Kale Pesto Pasta</h1>
+        <div id="recipeDetails">
+            <div id="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>8 ounces pasta (such as penne or fusilli)</li>
+                    <li>2 cups kale, stems removed and leaves chopped</li>
+                    <li>1/2 cup pine nuts</li>
+                    <li>1/4 cup nutritional yeast</li>
+                    <li>2 garlic cloves</li>
+                    <li>1/4 cup olive oil</li>
+                    <li>1 tablespoon lemon juice</li>
+                    <li>Salt and pepper to taste</li>
+                    <li>1/4 cup grated Parmesan cheese (optional)</li>
+                </ul>
+            </div>
+            <img src="webimg/kale-pesto-pasta.png" alt="Kale Pesto Pasta">
+        </div>
+        <h2>Cooking Process</h2>
+        <ol>
+            <li>Cook the pasta according to package instructions. Drain and set aside.</li>
+            <li>In a food processor, combine kale, pine nuts, nutritional yeast, and garlic. Pulse until finely chopped.</li>
+            <li>With the processor running, gradually add olive oil and lemon juice until the mixture forms a smooth paste. Season with salt and pepper to taste.</li>
+            <li>Toss the cooked pasta with the kale pesto until well coated.</li>
+            <li>Serve with grated Parmesan cheese if desired.</li>
+        </ol>
+        <div class="info-section">
+            <h2>Nutritional Information</h2>
+            <p><strong>Serving Size:</strong> 1 serving (about 1 cup)</p>
+            <p><strong>Calories:</strong> 350 kcal</p>
+            <p><strong>Protein:</strong> 8 g</p>
+            <p><strong>Carbohydrates:</strong> 40 g</p>
+            <p><strong>Fat:</strong> 18 g</p>
+            <p><strong>Sodium:</strong> 250 mg</p>
+        </div>
+        <div class="info-section">
+            <h2>Cooking Tips and Tricks</h2>
+            <p>1. For a richer flavor, lightly toast the pine nuts before adding them to the pesto.</p>
+            <p>2. Use a high-quality olive oil for the best taste.</p>
+            <p>3. If the pesto is too thick, add a bit of pasta cooking water to reach the desired consistency.</p>
+            <p>4. Make a double batch of pesto and freeze it for future use. It keeps well in the freezer for up to 3 months.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Earthly Eats. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mint Rice Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: #45a049;
+        }
+        
+        /* Main Content Styles */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+        
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        #recipeDetails {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        
+        #recipeDetails img {
+            max-width: 70%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        #recipeDetails h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        #recipeDetails ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        
+        #recipeDetails li {
+            margin-bottom: 8px;
+        }
+        
+        /* Nutritional Info and Cooking Tips */
+        #extraInfo {
+            margin-top: 20px;
+        }
+        
+        #extraInfo h2 {
+            color: black;
+            margin-bottom: 15px;
+        }
+        
+        #extraInfo ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        #extraInfo li {
+            margin-bottom: 10px;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            width: 100%;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="breakfast.html">Breakfast</a>
+            <a href="maincourse.html">Main Courses</a>
+            <a href="desserts.html">Desserts</a>
+            <a href="snacks.html">Snacks</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Mint Rice</h1>
+        <div id="recipeDetails">
+            <div id="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>1 cup basmati rice</li>
+                    <li>1/2 cup fresh mint leaves, finely chopped</li>
+                    <li>1 onion, sliced</li>
+                    <li>2 green chilies, slit</li>
+                    <li>1 teaspoon cumin seeds</li>
+                    <li>1 bay leaf</li>
+                    <li>2 tablespoons oil or ghee</li>
+                    <li>Salt to taste</li>
+                    <li>2 cups water</li>
+                </ul>
+            </div>
+            <img src="webimg/mint-rice.png" alt="Mint Rice">
+        </div>
+        <h2>Instructions</h2>
+        <ol>
+            <li>Rinse the basmati rice under cold water until the water runs clear. Soak for 20-30 minutes, then drain.</li>
+            <li>Heat oil or ghee in a pan over medium heat. Add the cumin seeds and bay leaf, and sauté for a few seconds until fragrant.</li>
+            <li>Add the sliced onions and green chilies, and cook until the onions turn golden brown.</li>
+            <li>Add the finely chopped mint leaves and cook for another minute.</li>
+            <li>Add the soaked and drained rice to the pan, and stir gently to mix with the mint and onion mixture.</li>
+            <li>Pour in 2 cups of water and add salt to taste. Bring to a boil, then reduce the heat to low, cover, and simmer for 15-20 minutes, or until the rice is cooked and water is absorbed.</li>
+            <li>Remove from heat and let it sit, covered, for 5 minutes. Fluff the rice with a fork before serving.</li>
+        </ol>
+
+        <!-- Nutritional Info and Cooking Tips -->
+        <div id="extraInfo">
+            <h2>Nutritional Information</h2>
+            <ul>
+                <li><strong>Calories:</strong> 220 kcal per serving</li>
+                <li><strong>Carbohydrates:</strong> 38g</li>
+                <li><strong>Proteins:</strong> 4g</li>
+                <li><strong>Fats:</strong> 6g</li>
+                <li><strong>Fiber:</strong> 2g</li>
+                <li><strong>Vitamins:</strong> A, C, and E (from mint and other ingredients)</li>
+            </ul>
+
+            <h2>Cooking Tips & Tricks</h2>
+            <ul>
+                <li><strong>Rinsing Rice:</strong> Always rinse your rice thoroughly to remove excess starch. This ensures the rice doesn't become too sticky.</li>
+                <li><strong>Soaking Rice:</strong> Soaking the rice helps to shorten the cooking time and make the grains fluffier.</li>
+                <li><strong>Mint Leaves:</strong> Use fresh mint leaves for the best flavor. Dried mint can be used as a substitute, but fresh mint gives a more vibrant taste.</li>
+                <li><strong>Aromatics:</strong> Adding whole spices like bay leaves and cumin seeds adds depth to the flavor of the dish.</li>
+                <li><strong>Resting Time:</strong> Letting the rice rest covered after cooking helps to further steam it and fluff up the grains before serving.</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Earthly Eats. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palak Paneer Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: #45a049;
+        }
+        
+        /* Main Content Styles */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+        
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        #recipeDetails {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        
+        #recipeDetails img {
+            max-width: 70%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        #recipeDetails h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        #recipeDetails ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        
+        #recipeDetails li {
+            margin-bottom: 8px;
+        }
+        
+        #recipeDetails ol {
+            padding-left: 20px;
+        }
+        
+        #recipeDetails li {
+            margin-bottom: 15px;
+        }
+        
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            width: 100%;
+            margin-top: auto;
+        }
+        
+        /* Nutritional Information and Cooking Tips */
+        #nutrition, #cookingTips {
+            margin-top: 30px;
+        }
+        
+        #nutrition ul, #cookingTips ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="breakfast.html">Breakfast</a>
+            <a href="maincourse.html">Main Courses</a>
+            <a href="desserts.html">Desserts</a>
+            <a href="snacks.html">Snacks</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Palak Paneer</h1>
+        <div id="recipeDetails">
+            <div id="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>2 cups spinach leaves, blanched and pureed</li>
+                    <li>200 grams paneer, cubed</li>
+                    <li>1 large onion, finely chopped</li>
+                    <li>2 tomatoes, finely chopped</li>
+                    <li>1 tablespoon ginger-garlic paste</li>
+                    <li>1 teaspoon cumin seeds</li>
+                    <li>1/2 teaspoon turmeric powder</li>
+                    <li>1 teaspoon garam masala</li>
+                    <li>1/2 teaspoon chili powder</li>
+                    <li>2 tablespoons oil</li>
+                    <li>Salt to taste</li>
+                    <li>1 tablespoon lemon juice</li>
+                </ul>
+            </div>
+            <img src="webimg/palak-paneer.png" alt="Palak Paneer">
+        </div>
+        <h2>Cooking Process</h2>
+        <ol>
+            <li>Heat oil in a pan, add cumin seeds, and let them splutter. Add chopped onions and sauté until golden brown.</li>
+            <li>Add ginger-garlic paste and cook for a minute. Add chopped tomatoes and cook until they soften.</li>
+            <li>Add turmeric powder, garam masala, chili powder, and salt. Cook for a couple of minutes.</li>
+            <li>Add the spinach puree and cook for 5-7 minutes. Adjust seasoning as needed.</li>
+            <li>Add the paneer cubes and cook for another 5 minutes, allowing the paneer to absorb the flavors.</li>
+            <li>Finish with lemon juice and serve hot with roti or rice.</li>
+        </ol>
+        
+        <div id="nutrition">
+            <h2>Nutritional Information (Per Serving)</h2>
+            <ul>
+                <li>Calories: 250 kcal</li>
+                <li>Protein: 10g</li>
+                <li>Fat: 18g</li>
+                <li>Carbohydrates: 12g</li>
+                <li>Fiber: 3g</li>
+                <li>Vitamin A: 60% of Daily Value (DV)</li>
+                <li>Iron: 15% of DV</li>
+                <li>Calcium: 20% of DV</li>
+            </ul>
+        </div>
+        
+        <div id="cookingTips">
+            <h2>Cooking Tips & Tricks</h2>
+            <ul>
+                <li>Blanch the spinach for 2 minutes and immediately transfer it to ice water to retain its bright green color.</li>
+                <li>For a creamier texture, add a tablespoon of fresh cream or cashew paste to the spinach puree.</li>
+                <li>If paneer is firm, soak it in warm water for 10 minutes to soften it before cooking.</li>
+                <li>Grill the paneer cubes for a few minutes before adding them to the curry to give them a smoky flavor.</li>
+                <li>Add a pinch of kasuri methi (dried fenugreek leaves) at the end for an authentic restaurant-style taste.</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Earthly Eats. All rights reserved.</p>
+    </footer>
+</body>
+</html>

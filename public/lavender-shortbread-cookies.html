@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavender Shortbread Cookies</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: #45a049;
+        }
+        
+        /* Main Content Styles */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+        
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        #recipeDetails {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        
+        #recipeDetails .ingredients {
+            flex: 1;
+        }
+        
+        #recipeDetails .ingredients h2,
+        #recipeDetails .instructions h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        #recipeDetails .ingredients ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        
+        #recipeDetails .ingredients li,
+        #recipeDetails .instructions li {
+            margin-bottom: 15px;
+        }
+        
+        #recipeDetails .instructions {
+            flex: 2;
+        }
+        
+        #recipeDetails img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        
+        /* Additional Sections Styles */
+        .info-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .info-section h2 {
+            color: black;
+            margin-bottom: 15px;
+        }
+
+        .info-section p {
+            margin-bottom: 10px;
+        }
+        
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color:#4CAF50;
+            color: white;
+            width: 100%;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="breakfast.html">Breakfast</a>
+            <a href="maincourse.html">Main Courses</a>
+            <a href="desserts.html">Desserts</a>
+            <a href="snacks.html">Snacks</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Lavender Shortbread Cookies</h1>
+        <div id="recipeDetails">
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>1 cup unsalted butter, softened</li>
+                    <li>1/2 cup granulated sugar</li>
+                    <li>2 cups all-purpose flour</li>
+                    <li>2 tablespoons dried lavender flowers</li>
+                    <li>Pinch of salt</li>
+                </ul>
+            </div>
+            <img src="webimg/lavender-shortbread-cookies.png" alt="Lavender Shortbread Cookies">
+        </div>
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Preheat your oven to 325°F (163°C). Line a baking sheet with parchment paper.</li>
+                <li>In a bowl, cream together the butter and sugar until light and fluffy.</li>
+                <li>Mix in the flour and salt until just combined. Fold in the lavender flowers.</li>
+                <li>Roll the dough into a log and chill for 30 minutes.</li>
+                <li>Slice the dough into 1/4-inch thick rounds and place them on the prepared baking sheet.</li>
+                <li>Bake for 12-15 minutes, or until the edges are lightly golden.</li>
+                <li>Let the cookies cool on a wire rack before serving.</li>
+            </ol>
+        </div>
+        <div class="info-section">
+            <h2>Nutritional Information</h2>
+            <p><strong>Serving Size:</strong> 1 cookie (1/24 of batch)</p>
+            <p><strong>Calories:</strong> 140 kcal</p>
+            <p><strong>Protein:</strong> 1 g</p>
+            <p><strong>Carbohydrates:</strong> 18 g</p>
+            <p><strong>Fat:</strong> 7 g</p>
+            <p><strong>Sodium:</strong> 50 mg</p>
+        </div>
+        <div class="info-section">
+            <h2>Cooking Tips and Tricks</h2>
+            <p>1. Make sure the butter is fully softened to ensure a smooth dough. If it's too cold, the cookies may be tough.</p>
+            <p>2. For uniform cookies, use a cookie cutter or slice the dough with a sharp knife.</p>
+            <p>3. If you want to add extra flavor, consider mixing in a teaspoon of vanilla extract.</p>
+            <p>4. Chill the dough thoroughly before baking to help the cookies retain their shape and avoid spreading too much.</p>
+            <p>5. Store the cookies in an airtight container to keep them fresh for up to a week. You can also freeze them for up to 3 months.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Earthly Eats. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriFind Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: inline-block;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .results {
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #e9f5e9;
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #d4e8d4;
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>NutriFind</h1>
+        <form id="recipeForm">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" min="30" max="200" step="0.1" required>
+
+            <label for="lifestyle">Lifestyle:</label>
+            <select id="lifestyle" name="lifestyle" required>
+                <option value="" disabled selected>Select lifestyle</option>
+                <option value="sedentary">Sedentary (mostly sitting, little activity)</option>
+                <option value="moderate">Moderate (light physical activity)</option>
+                <option value="active">Active (high physical activity)</option>
+            </select>
+
+            <label for="preference">Dietary Preference:</label>
+            <select id="preference" name="preference" required>
+                <option value="" disabled selected>Select dietary preference</option>
+                <option value="weightLoss">Weight Loss</option>
+                <option value="muscleGain">Muscle Gain</option>
+                <option value="maintain">Maintain Current Weight</option>
+            </select>
+
+            <button type="submit">submit</button>
+        </form>
+        <div id="results" class="results"></div>
+    </div>
+
+    <script>
+        document.getElementById('recipeForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const weight = parseFloat(document.getElementById('weight').value);
+            const lifestyle = document.getElementById('lifestyle').value;
+            const preference = document.getElementById('preference').value;
+
+            let dailyProtein = 0;
+            const plantBasedRecipes = {
+                weightLoss: [
+                    { name: 'Moong Dal Salad', protein: 10, vitamins: 'Vitamin C, Vitamin K', minerals: 'Iron, Magnesium' },
+                    { name: 'Palak Soup', protein: 8, vitamins: 'Vitamin A, Vitamin C', minerals: 'Calcium, Iron' },
+                    { name: 'Vegetable Raita', protein: 6, vitamins: 'Vitamin B12', minerals: 'Zinc, Calcium' }
+                ],
+                muscleGain: [
+                    { name: 'Chole Bhature', protein: 18, vitamins: 'Vitamin B6', minerals: 'Iron, Magnesium' },
+                    { name: 'Paneer Tikka', protein: 25, vitamins: 'Vitamin D, Vitamin B12', minerals: 'Calcium, Phosphorus' },
+                    { name: 'Rajma Chawal', protein: 15, vitamins: 'Vitamin C', minerals: 'Iron, Potassium' }
+                ],
+                maintain: [
+                    { name: 'Dosa with Sambhar', protein: 12, vitamins: 'Vitamin A, Vitamin C', minerals: 'Calcium, Iron' },
+                    { name: 'Masoor Dal', protein: 20, vitamins: 'Vitamin B6', minerals: 'Magnesium, Potassium' },
+                    { name: 'Aloo Paratha with Curd', protein: 8, vitamins: 'Vitamin D', minerals: 'Zinc, Phosphorus' }
+                ]
+            };
+
+            // Calculate daily protein requirement based on lifestyle
+            switch (lifestyle) {
+                case 'sedentary':
+                    dailyProtein = weight * 0.8;
+                    break;
+                case 'moderate':
+                    dailyProtein = weight * 1.0;
+                    break;
+                case 'active':
+                    dailyProtein = weight * 1.2;
+                    break;
+            }
+
+            const selectedRecipes = plantBasedRecipes[preference];
+            let resultsHtml = `<h2>Recommended Daily Protein: ${dailyProtein.toFixed(1)}g</h2><ul>`;
+
+            // Display selected recipes with nutritional information
+            selectedRecipes.forEach(recipe => {
+                resultsHtml += `
+                    <li>
+                        <strong>${recipe.name}</strong><br>
+                        Protein: ${recipe.protein}g<br>
+                        Vitamins: ${recipe.vitamins}<br>
+                        Minerals: ${recipe.minerals}
+                    </li>`;
+            });
+
+            resultsHtml += '</ul>';
+            document.getElementById('results').innerHTML = resultsHtml;
+        });
+
+        // Session validation for logged-in users
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('/auth/check-session')
+                .then(response => response.json())
+                .then(data => {
+                    if (!data.loggedIn) {
+                        alert('Please log in to view this page');
+                        window.location.href = '/'; // Redirect to home page
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred while checking session status.');
+                    window.location.href = '/'; // Redirect to home page in case of error
+                });
+        });
+    </script>
+</body>
+</html>

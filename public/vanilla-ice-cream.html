@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla Ice Cream Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: #45a049;
+        }
+        
+        /* Main Content Styles */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+        
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        #recipeDetails {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        
+        #recipeDetails img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        #recipeDetails div {
+            flex: 1;
+        }
+        
+        #recipeDetails h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        #recipeDetails ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        
+        #recipeDetails li {
+            margin-bottom: 8px;
+        }
+        
+        #recipeDetails ol {
+            padding-left: 20px;
+        }
+        
+        #recipeDetails ol li {
+            margin-bottom: 15px;
+        }
+        
+        /* Nutritional Info and Cooking Tips Styles */
+        .info-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .info-section h2 {
+            color: black;
+            margin-bottom: 15px;
+        }
+        
+        .info-section p {
+            margin-bottom: 10px;
+        }
+        
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            width: 100%;
+            margin-top: auto;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            #recipeDetails {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #recipeDetails img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="breakfast.html">Breakfast</a>
+            <a href="maincourse.html">Main Courses</a>
+            <a href="desserts.html">Desserts</a>
+            <a href="snacks.html">Snacks</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Vanilla Ice Cream</h1>
+        <div id="recipeDetails">
+            <div>
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>2 cups heavy cream</li>
+                    <li>1 cup whole milk</li>
+                    <li>3/4 cup granulated sugar</li>
+                    <li>1 tablespoon vanilla extract</li>
+                    <li>1/4 teaspoon salt</li>
+                </ul>
+                <h2>Cooking Process</h2>
+                <ol>
+                    <li>In a mixing bowl, whisk together the heavy cream, milk, sugar, vanilla extract, and salt until the sugar is dissolved.</li>
+                    <li>Pour the mixture into an ice cream maker and churn according to the manufacturer's instructions.</li>
+                    <li>Transfer the churned ice cream to a container and freeze for at least 2 hours before serving.</li>
+                </ol>
+            </div>
+            <img src="webimg/vanilla-ice-cream .png" alt="Vanilla Ice Cream">
+        </div>
+        <div class="info-section">
+            <h2>Nutritional Information</h2>
+            <p><strong>Serving Size:</strong> 1/2 cup</p>
+            <p><strong>Calories:</strong> 250 kcal</p>
+            <p><strong>Protein:</strong> 3 g</p>
+            <p><strong>Carbohydrates:</strong> 23 g</p>
+            <p><strong>Fat:</strong> 17 g</p>
+            <p><strong>Sodium:</strong> 60 mg</p>
+        </div>
+        <div class="info-section">
+            <h2>Cooking Tips and Tricks</h2>
+            <p>1. For the creamiest texture, make sure your ice cream maker is well chilled before use.</p>
+            <p>2. If you don't have an ice cream maker, you can freeze the mixture in a shallow dish and stir every 30 minutes until frozen.</p>
+            <p>3. To add mix-ins like chocolate chips or fruit, fold them in during the last 5 minutes of churning.</p>
+            <p>4. Let the ice cream sit at room temperature for a few minutes before scooping for easier serving.</p>
+            <p>5. Store ice cream in an airtight container to prevent ice crystals from forming.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Earthly Eats. All rights reserved.</p>
+    </footer>
+</body>
+</html>

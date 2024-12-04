@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Earthly Eats</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 18px;
+    background-color: #4CAF50; /* Keep the background color consistent */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 60px; /* Adjust the size of the logo */
+    height: auto;
+    margin-right: 10px; /* Space between the logo and text */
+}
+
+
+.nav-buttons {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-buttons li {
+    margin-bottom: 10px; /* Add space between each item */
+}
+
+.nav-buttons li a.btn {
+    text-decoration: none;
+    padding: 8px 12px;
+    display: inline-block;
+    background-color: #4CAF50; /* Adjust button color */
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-buttons li a.btn:hover {
+    background-color: #45a049; /* Change color on hover */
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.btn:hover {
+    background-color: #ddd;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Aligns the login button to the far right */
+}
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            
+            color: white;
+             /* Allows items to wrap if necessary */
+        }
+
+        .logo {
+    
+            font-size: 30px;
+            font-family: 'Playfair Display', serif; /* Stylish font for logo */
+            font-weight: bold;
+        }
+
+        .logo-image {
+            width: 150px;
+            height: 100px;
+            margin-right: 15px;
+            background-color: #4CAF50;
+             /* Makes the image circular */
+             
+        }
+        
+        .logo1{
+            width: 65px;
+            border-radius: 50%;
+            margin-right: 5px;
+            margin-bottom: -0.5cm;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .left {
+            margin-left: 600px;
+            
+        }
+
+        .nav-buttons {
+            list-style: none;
+            display: flex;
+            align-items: left;
+            gap: 20px;
+             /* Remove margin to align buttons correctly */
+        }
+
+        .nav-buttons .btn {
+            text-decoration: none;
+            color: white;
+            background-color: #4CAF50; /* Teal color for all buttons */
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-buttons .btn:hover {
+            background-color: #00796b; /* Slightly darker teal on hover */
+        }
+
+        /* Specific styles for Login and Sign Up buttons */
+        .nav-buttons .btn-login,
+        .nav-buttons .btn-signup {
+            background-color: #4CAF50; /* Same teal color */
+        }
+
+        .nav-buttons .btn-login:hover,
+        .nav-buttons .btn-register:hover {
+            background-color: #00796b; /* Slightly darker teal on hover */
+        }
+
+        /* Contact Section */
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+            background-color: #f9f9f9;
+        }
+
+        .contact-form,
+        .contact-info {
+            width: 60%; /* Adjust width to center */
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px; /* Space between sections */
+        }
+
+        .contact-info h2,
+        .contact-form h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .contact-info p,
+        .contact-form p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: calc(100% - 20px); /* Adjust width to account for padding */
+            padding: 6px; /* Reduced padding */
+            margin-bottom: 15px; /* Reduced margin */
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px; /* Smaller font size */
+        }
+
+        .contact-form textarea {
+            height: 100px; /* Reduced height for textarea */
+        }
+
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            align-items: center;
+            transition: background-color 0.3s ease;
+            margin: 20px auto 0;
+        }
+
+        .contact-form button:hover {
+            background-color: #00796b;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Social Media Icons */
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: white; /* Icon color */
+            margin: 0 15px;
+            font-size: 24px; /* Adjust size as needed */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #f0f0f0; /* Slightly lighter color on hover */
+        }
+
+
+
+
+
+
+        /* Styles for the dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1; /* Grey background color */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+    overflow: hidden;
+    top: 100%; /* Position below the button */
+    left: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd; /* Slightly darker grey on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .btn {
+    background-color: #3e8e41;
+}
+
+.arrow {
+    font-size: 12px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/* Hide arrow when dropdown is visible */
+.dropdown .btn .arrow {
+    display: inline;
+}
+
+
+        
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Logo Image -->
+                <img src="webimg/12.jpeg" alt="Website Logo" class="logo-image">
+            </div>
+            <div class="left">
+                <ul class="nav-buttons">
+                    <!-- Navigation Links -->
+                    <li><a href="home.html" class="btn">Home</a></li>
+                    <li><a href="recipes.html" class="btn">Recipes</a></li>
+                    <li><a href="about.html" class="btn">About</a></li>
+                    <li><a href="contact.html" class="btn">Contact</a></li>
+                    <li><a href="faq.html" class="btn">FAQ</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="btn" onclick="toggleCalculatorOptions()">Services <span class="arrow">&#9660;</span></a>
+                        <div id="calculator-options" class="dropdown-content">
+                            <a href="NutriFind.html" class="dropdown-item">NutriFind</a>
+                            <a href="proteincal.html" class="dropdown-item">Protein Calculator</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <script>
+                                 // Toggle display of authentication options
+    function toggleAuthOptions() {
+        var authOptions = document.getElementById('auth-options');
+        var display = authOptions.style.display === 'none' ? 'block' : 'none';
+        authOptions.style.display = display;
+    }
+
+    // Toggle display of calculator options
+    function toggleCalculatorOptions() {
+        var calculatorOptions = document.getElementById('calculator-options');
+        var display = calculatorOptions.style.display === 'none' ? 'block' : 'none';
+        calculatorOptions.style.display = display;
+    }
+            </script>
+        </nav>
+    </header>
+    
+
+    
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="contact-form">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! Please fill out the form below to get in touch with us.</p>
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+
+
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>If you have any questions or need further information, feel free to reach out to us at:</p>
+            <p>Email: <a href="mailto:info@earthlyeats.com">@earthlyeats.com</a></p>
+            <p>Phone Number:<a href="tel:+911234567890">9867412386</a></p>
+
+            <p>Address: 123 Green Lane,
+                Vasant Vihar,
+                New Delhi - 110057,
+                India</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #4CAF50; padding: 20px 0; color: white; text-align: center;">
+        <div style="display: flex; justify-content: space-between; align-items: start; max-width: 1200px; margin: 0 auto;">
+      
+          <!-- Earthly Eats Logo/Title -->
+          <div style="flex: 1; text-align: left; padding-left: 20px; margin-bottom: 20px;">
+            <h2 style="font-family: 'Arial', sans-serif; font-size: 24px; font-weight: bold;">Earthly Eats</h2>
+          </div>
+      
+          <!-- Quick Links -->
+          <div style="flex: 1; text-align: left; margin-bottom: 20px;">
+            <h3 style="font-size: 20px;">Quick Links</h3>
+            <ul style="list-style-type: none; padding: 0; margin: 0;">
+              <li><a href="home.html" style="color: white; text-decoration: none;">Home</a></li>
+              <li><a href="recipes.html" style="color: white; text-decoration: none;">Recipes</a></li>
+              <li><a href="about.html" style="color: white; text-decoration: none;">About</a></li>
+              <li><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
+              <li><a href="faq.html" style="color: white; text-decoration: none;">FAQ</a></li>
+            </ul>
+          </div>
+      
+          <!-- Contact Us -->
+          <div style="flex: 1; text-align: left; margin-bottom: 20px;">
+            <h3 style="font-size: 20px;">Contact Us</h3>
+            <p style="margin: 5px 0;">Email: @earthlyeats.com</p>
+            <p style="margin: 5px 0;">Phone: 9867412386</p>
+          </div>
+      
+          <!-- Follow Us -->
+          <div style="flex: 1; text-align: left; padding-right: 20px; margin-bottom: 20px;">
+            <h3 style="font-size: 20px;">Follow Us</h3>
+            <a href="https://www.instagram.com" target="_blank" style="color: white; text-decoration: none; margin-right: 10px;">
+              <i class="fab fa-instagram" style="font-size: 24px;"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" style="color: white; text-decoration: none; margin-right: 10px;">
+              <i class="fab fa-facebook" style="font-size: 24px;"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" style="color: white; text-decoration: none;">
+              <i class="fab fa-twitter" style="font-size: 24px;"></i>
+            </a>
+          </div>
+        </div>
+      
+        <hr style="border-top: 1px solid white; width: 90%; margin: 20px auto;">
+      
+        <p style="font-size: 14px;">&copy; 2024 Earthly Eats. All rights reserved.</p>
+      </footer>
+    
+</body>
+</html>
